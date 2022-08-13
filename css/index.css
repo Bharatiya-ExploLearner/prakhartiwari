@@ -1,0 +1,112 @@
+::selection {
+  color: #ffce76;
+  background: #1d1919;
+}
+
+body {
+  background-image: url("../images/background1.jpg");
+  background-size: contain;
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
+.illustrations1 {
+  z-index: -1;
+  position: absolute;
+  width: 60%;
+  top: 30em;
+  /* left: 0; */
+}
+
+.illustrations2 {
+  z-index: -1;
+  position: absolute;
+  width: 60%;
+  top: -10em;
+}
+
+.dotted_division {
+  margin-top: 3em;
+  /* margin-bottom: 3em; */
+}
+
+.Social_Media {
+  margin-top: 3em;
+}
+.Social_Media > a {
+  padding: 0 1em;
+}
+
+.Social_Media > a > img:hover {
+  transition: 0.2s ease;
+  box-shadow: 0px 0px 10px #242323;
+
+  background-color: #ffce76;
+  border-radius: 100%;
+}
+
+/* HEROPAGE */
+.heropage {
+  color: #1d1919;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Name {
+  font-family: "Kalam", cursive;
+  font-size: 5em;
+  transition: 0.2s ease;
+}
+
+#Name:hover{
+    transition: 0.2s ease;
+    text-shadow: 1px 10px 5px #1d191940;
+}
+
+#Divider1 {
+  width: 40%;
+  z-index: -1;
+}
+
+.tagline {
+  font-family: 'Caveat', cursive;
+  font-size: 4em;
+}
+.tagline > strong {
+}
+
+
+
+/* About me Section */
+
+.aboutmesection {
+}
+
+.introduction {
+  background-color: #1d1919a3;
+  margin: 5em;
+}
+
+.mypic{
+
+}
+
+.mypic img{
+
+}
+
+.aboutmesection p {
+  color: #fdb827;
+  padding: 1em 2em;
+  font-size: 2em;
+}
+.introduction > h1 {
+  color: #eec550;
+  font-size: 3em;
+}
