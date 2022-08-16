@@ -191,7 +191,7 @@ footer p {
 
 /*Default CSS layout for narrow screens*/
 
-@media (min-width: 480px) and (max-width: 700px) {
+@media (max-width: 700px) {
   /*CSS for medium width screens*/
   body{
     font-size: 14px;
