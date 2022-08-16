@@ -1,0 +1,51 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    background-color: black;
+}
+
+.heropage{
+    background-image: url("../images/background4.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #F1F1F1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.heropage h1{
+    font-weight: 900;
+    font-size: 4em;
+    position: relative;
+    bottom: 2.8em;
+}
+
+.quote{
+    margin: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5em;
+    border: 5px solid #F1F1F1;
+    border-left: hidden;
+    border-top: hidden;
+    padding: 1em 2em;
+    color: #F1F1F1;
+}
+.quote h2{
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2em;
+}
+
+.quote h2::before{
+      content: open-quote;
+    
+}
+.quote h2::after{
+      content: close-quote;
+
+}

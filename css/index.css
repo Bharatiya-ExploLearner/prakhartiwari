@@ -1,8 +1,3 @@
-::selection {
-  color: #ffce76;
-  background: #1d1919;
-}
-
 body {
   background-image: url("../images/background1.jpg");
   background-size: contain;
@@ -17,15 +12,14 @@ body {
   z-index: -1;
   position: absolute;
   width: 60%;
-  top: 30%;
-  /* left: 0; */
+  top: -10em;
 }
-
 .illustrations2 {
   z-index: -1;
   position: absolute;
   width: 60%;
-  top: -10em;
+  top: 30em;
+  /* left: 0; */
 }
 
 .dotted_division {
@@ -59,54 +53,101 @@ body {
 }
 
 #Name {
-  font-family: "Kalam", cursive;
-  font-size: 5em;
+  font-family: "Prakrta";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 4em;
+  text-transform: uppercase;
   transition: 0.2s ease;
+  margin-top: 1em;
+  text-shadow: 3px 3px 5px #1d1919b5;
 }
 
-#Name:hover{
-    transition: 0.2s ease;
-    text-shadow: 1px 10px 5px #1d191940;
-}
-
-#Divider1 {
+.Divider1 {
   width: 40%;
   z-index: -1;
 }
 
 .tagline {
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
+  font-style: normal;
   font-size: 4em;
 }
-.tagline > strong {
-}
-
-
-
 /* About me Section */
-
 .aboutmesection {
+  /* display: flex;
+  justify-content: center; */
 }
 
 .introduction {
-  background-color: #1d1919a3;
-  margin: 5em;
-}
-
-.mypic{
-
-}
-
-.mypic img{
-
-}
-
-.aboutmesection p {
-  color: #fdb827;
-  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   font-size: 2em;
 }
-.introduction > h1 {
-  color: #eec550;
-  font-size: 3em;
+
+.mypicdiv {
+  width: 30%;
+  border-radius: 100%;
+}
+.mypicdiv img{
+  width: 100%;
+  border-radius: 100%;
+  box-shadow: 2px 2px 5px black;
+}
+
+.text {
+  max-width: 60%;
+  text-align: center;
+  background-color: #1d191994;
+  color: #f7b844;
+  padding: 1em;
+  border-radius: 16px;
+}
+
+.text h1{
+  text-shadow: 3px 3px 15px #5d3d00;
+}
+.text strong{
+  text-shadow: 3px 3px 15px #2f1e00;
+  font-weight: 900;
+  
+}
+
+
+
+
+/* Media Queries  */
+
+@media (min-width: 480px) and (max-width: 700px) {
+  /*CSS for medium width screens*/
+  .illustrations1 {
+    width: 100%;
+    top: 1em;
+  }
+  .illustrations2 {
+    width: 150%;
+    top: 40em;
+  }
+  .Divider1 {
+    width: 60%;
+  }
+  .Social_Media {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .Social_Media a {
+    /* margin: 1em 1em; */
+  }
+}
+
+@media (min-width: 800px) {
+  /*CSS for wide screens*/
+}
+
+@media (min-width: 1100px) {
+  /*CSS for really wide screens*/
 }

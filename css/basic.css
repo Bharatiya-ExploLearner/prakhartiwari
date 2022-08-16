@@ -6,10 +6,25 @@ font-family: 'Kalam', cursive;
   font-family: 'Homemade Apple', cursive;
 
 */
+body::before{
+  content: "⚙️ Under Construction";
+  color: #ffce76;
+  background-color: #1d1919;
+  padding: 0.1em 0.5em;
+  border-radius: 5px;
+  width: 13em;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 40vw;
+  right: 40vw;
+  z-index: 3;
+}
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ::selection {
@@ -43,27 +58,6 @@ font-family: 'Kalam', cursive;
   border-radius: 100%;
   background-color: #ffce76;
 }
-
-/* FOOTER */
-footer {
-  color: #ffce76;
-  background-color: #1d1919;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 10em;
-}
-
-footer a {
-  margin: 1em;
-  color: #ffce76;
-}
-
-footer p {
-  padding: 2em;
-}
-
 
 /* ROOMS and MENU */
 .Rooms,
@@ -174,3 +168,56 @@ footer p {
   border-bottom: solid 5px #ffce76;
 }
 
+
+/* FOOTER */
+footer {
+  color: #ffce76;
+  background-color: #1d1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 10em;
+}
+
+footer a {
+  margin: 1em;
+  color: #ffce76;
+}
+
+footer p {
+  padding: 2em;
+}
+
+/*Default CSS layout for narrow screens*/
+
+@media (min-width: 480px) and (max-width: 700px) {
+  /*CSS for medium width screens*/
+  body{
+    font-size: 14px;
+  }
+  .navbar{
+  color: #ffce76;
+  background-color: #1d1919;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  flex-direction: row;
+  height: 5em;
+  width: 100%;
+
+  }
+
+  .MenuButton, .RoomsButton{
+  color: #1d1919;
+  background-color: #ffce76;
+  border-radius: 20px;
+  padding: 0.5em 0.5em;
+}
+.RoomsButton{
+    padding: 0em 0em;
+
+  }
+}
