@@ -4,6 +4,8 @@ body{
     background-color: var(--theme_brown);
     display: flex;
     flex-direction: column;
+    font-family: 'Ubuntu Mono', monospace;
+
 }
 
 .topbutton{
@@ -64,12 +66,12 @@ nav ul li a:hover{
 
 
 .front-section{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     /* justify-content: center; */
     flex-direction: column;
-    border-bottom: 3px solid var(--theme_yellow);
+    /* border-bottom: 3px solid var(--theme_yellow); */
 
 }
 .front-section .front_text_div{
@@ -95,10 +97,100 @@ nav ul li a:hover{
     flex:1;
 }
 .front-section .front_image_div .coloured_me{
-    /* border-bottom: 3px solid var(--theme_yellow); */
+    border-bottom: 3px solid var(--theme_yellow);
     width: 100%;
+}
+
+
+.info_section{
+    min-height: 100vh;
+    padding: 5em 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_card_title{
+    color: var(--theme_yellow);
+}
+
+.info_section .info_card{
+    width: 80%;
+    border: 3px solid var(--theme_yellow);
+    display: flex;
+    color: var(--theme_yellow);
+}
+
+
+.info_section .info_card .short{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--theme_yellow);
+
+}
+
+.info_section .info_card .short .short_image_div{
+    width: 15em;
+    
+}
+.info_section .info_card .short .short_image_div img{
+    /* border: 1px solid var(--theme_yellow); */
+    border-right: 1px solid var(--theme_yellow);
+    border-bottom: 1px solid var(--theme_yellow);
+    width: 100%;
+    filter: blur(5px);
+    transition: 0.3s ease;
+}
+
+.info_section .info_card .short .short_image_div img:hover{
+    transition: 0.3s ease;
+    filter: blur(0px);
+
+
+}
+
+.info_section .info_card .short .short_text_div{
+    padding: 1em 1em;
+    flex:1;
+}
+.info_section .info_card .short .short_text_div p{
+    margin: 1em 0em;
+}
+
+
+.info_section .info_card .brief{
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* align-items: center; */
+padding: 1em 1em;
+font-size: 1.5em;
+}
+.info_section .info_card .brief ul{
+    list-style-type: square;
+    margin-top: 0.5em;
 }
 
 
 
 
+.social_section{
+    min-height: 100vh;
+    display: flex;
+    padding: 1em 8em;
+    justify-content: center;
+    /* align-items: center; */
+}
+.social_ways_div{
+    color: var(--theme_yellow);
+    font-size: 2em;
+}
+.social_ways_div li{
+    margin: 1em;
+
+}
+
+.social_ways_div a{
+    color: var(--theme_yellow);
+}
