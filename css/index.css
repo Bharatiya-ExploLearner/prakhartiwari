@@ -1,153 +1,104 @@
-body {
-  background-image: url("../images/background1.jpg");
-  background-size: contain;
-  background-attachment: fixed;
-  /* background-repeat: no-repeat; */
-
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-}
-
-.illustrations1 {
-  z-index: -1;
-  position: absolute;
-  width: 60%;
-  top: -10em;
-}
-.illustrations2 {
-  z-index: -1;
-  position: absolute;
-  width: 60%;
-  top: 30em;
-  /* left: 0; */
-}
-
-.dotted_division {
-  margin-top: 3em;
-  /* margin-bottom: 3em; */
-}
-
-.Social_Media {
-  margin-top: 3em;
-}
-.Social_Media > a {
-  padding: 0 1em;
-}
-
-.Social_Media > a > img:hover {
-  transition: 0.2s ease;
-  box-shadow: 0px 0px 10px #242323;
-
-  background-color: #ffce76;
-  border-radius: 100%;
-}
-
-/* HEROPAGE */
-.heropage {
-  color: #1d1919;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-#Name {
-  font-family: "Prakrta";
-  font-style: italic;
-  font-weight: 500;
-  font-size: 4em;
-  text-transform: uppercase;
-  transition: 0.2s ease;
-  margin-top: 1em;
-  text-shadow: 3px 3px 5px #1d1919b5;
-}
-
-.Divider1 {
-  width: 40%;
-  z-index: -1;
-}
-
-.tagline {
-  font-family: "Caveat", cursive;
-  font-style: normal;
-  font-size: 4em;
-}
-/* About me Section */
-.aboutmesection {
-  /* display: flex;
-  justify-content: center; */
-}
-
-.introduction {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 2em;
-}
-
-.mypicdiv {
-  width: 30%;
-  border-radius: 100%;
-}
-.mypicdiv img{
-  width: 100%;
-  border-radius: 100%;
-  box-shadow: 2px 2px 5px black;
-}
-
-.text {
-  max-width: 60%;
-  text-align: center;
-  background-color: #1d191994;
-  color: #f7b844;
-  padding: 1em;
-  border-radius: 16px;
-}
-
-.text h1{
-  text-shadow: 3px 3px 15px #5d3d00;
-}
-.text strong{
-  text-shadow: 3px 3px 15px #2f1e00;
-  font-weight: 900;
-  
-}
 
 
-
-
-/* Media Queries  */
-
-@media (min-width: 480px) and (max-width: 700px) {
-  /*CSS for medium width screens*/
-  .illustrations1 {
-    width: 100%;
-    top: 1em;
-  }
-  .illustrations2 {
-    width: 150%;
-    top: 40em;
-  }
-  .Divider1 {
-    width: 60%;
-  }
-  .Social_Media {
+body{
+    background-color: var(--theme_brown);
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .Social_Media a {
-    /* margin: 1em 1em; */
-  }
+    flex-direction: column;
 }
 
-@media (min-width: 800px) {
-  /*CSS for wide screens*/
+.topbutton{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+}
+.topbutton a{
+    text-decoration: none;
+    color: var(--theme_yellow);
+    padding: 15px 15px;
+    border: var(--theme_yellow) 1px solid;
+}
+.topbutton a:hover{
+    text-decoration: underline;
 }
 
-@media (min-width: 1100px) {
-  /*CSS for really wide screens*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0.5em;
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 1em;
 }
+nav .logo{
+    flex: 1;
+}
+nav .logo img{
+    width: 15em;
+}
+nav .links{
+    flex: 1;
+    margin-right: 5em;
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+nav ul li{
+    
+}
+
+nav ul li a{
+    color: var(--theme_yellow);
+    font-size: 1.5em;
+    text-decoration: none;
+    
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+
+.front-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    border-bottom: 3px solid var(--theme_yellow);
+
+}
+.front-section .front_text_div{
+    color: var(--theme_yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.front-section .front_text_div .welcome_text{
+    padding: 0em 2em;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 4em;
+}
+.front-section .front_text_div .welcome_text code{
+    background-color: var(--theme_yellow);
+    color: var(--theme_brown);
+}
+
+.front-section .front_image_div{
+    width: 50%;
+    flex:1;
+}
+.front-section .front_image_div .coloured_me{
+    /* border-bottom: 3px solid var(--theme_yellow); */
+    width: 100%;
+}
+
+
+
+
