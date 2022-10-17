@@ -20,6 +20,20 @@
     color: var(--theme_brown);
 }
 
+body::before{
+  content: "⚙️ Under Construction";
+  color: #ffce76;
+  background-color: #1d1919;
+  padding: 0.1em 0.5em;
+  border-radius: 5px;
+  width: 13em;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 40vw;
+  right: 40vw;
+  z-index: 3;
+}
 
 footer{
     background-color: #1F2932;
