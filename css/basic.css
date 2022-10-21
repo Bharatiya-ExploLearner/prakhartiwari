@@ -35,8 +35,22 @@ body::before{
   z-index: 3;
 }
 
+body{
+    font-family: 'Ubuntu Mono', monospace;
+
+}
+
+/* ------------------------------ COMMON CLASSES ------------------------------ */
+.highlight_text{
+    background-color: var(--theme_yellow);
+    color: var(--theme_brown);
+}
+
+
+
+
 footer{
-    background-color: #1F2932;
+    background-color: black;
     width: 100%;
     padding: 2em 2em;
     display: flex;
