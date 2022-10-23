@@ -40,6 +40,122 @@ body{
 
 }
 
+/* ------------------------------ GOTO TOP BUTTON ------------------------------ */
+.topbutton{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+}
+.topbutton a{
+    text-decoration: none;
+    color: var(--theme_yellow);
+    padding: 15px 15px;
+    border: var(--theme_yellow) 1px solid;
+}
+.topbutton a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* ------------------------------ BASIC NAVBAR ------------------------------ */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0.5em;
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 1em;
+}
+nav .logo{
+    flex: 0.5;
+}
+nav .logo img{
+    width: 15em;
+}
+nav .links{
+    flex: 1;
+    /* margin-right: 5em; */
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.menu_link{
+    color: var(--theme_yellow);
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-right: 1em;
+
+
+    
+}
+.menu_link:hover{
+    text-decoration: underline;
+}
+/*  */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0.5em;
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 1em;
+}
+nav .logo{
+    flex: 0.5;
+}
+nav .logo img{
+    width: 15em;
+}
+nav .links{
+    flex: 1;
+    /* margin-right: 5em; */
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.menu_link{
+    color: var(--theme_yellow);
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-right: 1em;
+
+
+    
+}
+.menu_link:hover{
+    text-decoration: underline;
+}
+/*  */
+
+
+
+
+
+
+
+
 /* ------------------------------ COMMON CLASSES ------------------------------ */
 .highlight_text{
     background-color: var(--theme_yellow);
@@ -48,7 +164,7 @@ body{
 
 
 
-
+/* ------------------------------ FOOTER ------------------------------ */
 footer{
     background-color: black;
     width: 100%;
@@ -94,6 +210,8 @@ footer .blue{
 }
 
 
+
+/* ------------------------------ MIN MAX CLOSE BUTTONS ------------------------------ */
 
 .min_max_close{
     display: flex;
