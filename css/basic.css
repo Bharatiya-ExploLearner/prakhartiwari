@@ -86,7 +86,7 @@ nav .links{
 
 }
 
-nav ul {
+nav .links {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;

@@ -119,21 +119,42 @@ font-size: 1.5em;
 /* ------------------------------ SOCIAL SECTION ------------------------------ */
 
 .social_section{
-    min-height: 100vh;
     display: flex;
-    padding: 1em 8em;
+    padding: 1em 1em;
     justify-content: center;
     /* align-items: center; */
 }
-.social_ways_div{
+.social_div{
+    font-size: 1.5em;
+    padding: 1em 1em;
+    margin: 1em 1em;
     color: var(--theme_yellow);
-    font-size: 2em;
+    display: flex;
+    flex-direction: column;
 }
-.social_ways_div li{
-    margin: 1em;
+
+.social_div a{
+    margin: 1em 1em;
+    padding: 0.5em 0.5em;
+    border: 2px solid var(--theme_yellow);
+    text-decoration: none;
+}
+.social_div a:hover{
+    color: var(--theme_brown);
+    background-color: var(--theme_yellow);
 
 }
 
-.social_ways_div a{
-    color: var(--theme_yellow);
+
+
+.social_div .main_socials{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.social_div .other_socials{
+    display: flex;
+    justify-content: center;
+
 }
