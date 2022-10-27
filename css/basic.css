@@ -76,6 +76,7 @@ nav{
 }
 nav .logo{
     flex: 0.5;
+    z-index: -1;
 }
 nav .logo img{
     width: 15em;
@@ -105,6 +106,30 @@ nav .links {
 .menu_link:hover{
     text-decoration: underline;
 }
+
+
+nav .hover_menu{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+nav .hover_menu a{
+    padding: .5em .5em;
+    display: flex;
+    border: 1px solid var(--theme_yellow);
+}
+
+nav .hover_menu  a:hover{
+    color: var(--theme_brown);
+    background-color: var(--theme_yellow);
+}
+
+
+
+nav .hover_button:hover .hover_menu{
+  display: block;
+}
+
 
 /* ------------------------------ COMMON CLASSES ------------------------------ */
 .highlight_text{
