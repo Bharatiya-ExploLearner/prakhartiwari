@@ -14,6 +14,7 @@ body{
     display: flex;
     align-items: center;
     color: var(--theme_yellow);
+    padding: 2em 4em;
     /* justify-content: center; */
     /* flex-direction: column; */
     /* border-bottom: 3px solid var(--theme_yellow); */
@@ -132,6 +133,9 @@ font-size: 1.5em;
     display: flex;
     flex-direction: column;
 }
+.social_div div:first-child{
+    text-align:center;
+}
 
 .social_div a{
     margin: 1em 1em;
@@ -142,10 +146,7 @@ font-size: 1.5em;
 .social_div a:hover{
     color: var(--theme_brown);
     background-color: var(--theme_yellow);
-
 }
-
-
 
 .social_div .main_socials{
     display: flex;
@@ -158,3 +159,4 @@ font-size: 1.5em;
     justify-content: center;
 
 }
+
