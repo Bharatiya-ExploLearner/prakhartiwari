@@ -57,6 +57,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Ubuntu';
+
 }
 
 .info_card_title{
@@ -87,16 +89,6 @@ body{
     border-right: 1px solid var(--theme_yellow);
     border-bottom: 1px solid var(--theme_yellow);
     width: 100%;
-    filter: contrast(200%);
-    transition: 0.3s ease;
-}
-
-.info_section .info_card .short .short_image_div img:hover{
-    transition: 0.5s ease;
-    filter: contrast(100%);
-
-
-
 }
 
 .info_section .info_card .short .short_text_div{
@@ -111,14 +103,12 @@ body{
 .info_section .info_card .brief{
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: flex-start;
 padding: 1em 1em;
 font-size: 1.5em;
-margin: 1em 1em;
 }
-.info_section .info_card .brief ul{
-    list-style-type: square;
-    margin-top: 0.5em;
+.info_section .info_card .brief .present_status{
+    margin-top: 1em;
 }
 
 

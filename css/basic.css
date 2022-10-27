@@ -40,6 +40,11 @@ body{
 
 }
 
+a{
+    color: var(--theme_yellow);
+}
+
+
 /* ------------------------------ GOTO TOP BUTTON ------------------------------ */
 .topbutton{
     position: fixed;
@@ -63,7 +68,7 @@ body{
 /* ------------------------------ BASIC NAVBAR ------------------------------ */
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1em 0.5em;
     font-family: 'Ubuntu Mono', monospace;
