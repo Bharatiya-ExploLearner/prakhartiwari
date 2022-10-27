@@ -68,50 +68,6 @@ a{
 /* ------------------------------ BASIC NAVBAR ------------------------------ */
 nav{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em 0.5em;
-    font-family: 'Ubuntu Mono', monospace;
-    margin: 1em;
-}
-nav .logo{
-    flex: 0.5;
-}
-nav .logo img{
-    width: 15em;
-}
-nav .links{
-    flex: 1;
-    /* margin-right: 5em; */
-
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-}
-
-.menu_link{
-    color: var(--theme_yellow);
-    font-size: 1.5em;
-    text-decoration: none;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    font-family: 'Ubuntu Mono', monospace;
-    margin-right: 1em;
-
-
-    
-}
-.menu_link:hover{
-    text-decoration: underline;
-}
-/*  */
-
-nav{
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 0.5em;
@@ -133,7 +89,7 @@ nav .links{
 nav ul {
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .menu_link{
@@ -145,21 +101,10 @@ nav ul {
     border: none;
     font-family: 'Ubuntu Mono', monospace;
     margin-right: 1em;
-
-
-    
 }
 .menu_link:hover{
     text-decoration: underline;
 }
-/*  */
-
-
-
-
-
-
-
 
 /* ------------------------------ COMMON CLASSES ------------------------------ */
 .highlight_text{
@@ -220,7 +165,7 @@ footer .blue{
 
 .min_max_close{
     display: flex;
-    color: white;
+    color: var(--theme_yellow);
 }
 .min_max_close div{
     display: flex;
@@ -229,13 +174,13 @@ footer .blue{
     padding: 0.8em;
     width: 1.5em;
     height: 1.5em;
-    border: 1px solid white;
+    border: 1px solid var(--theme_yellow);
 }
 .min_max_close div:hover{
-    border: 1px solid white;
+    border: 1px solid var(--theme_yellow);
 }
 .min_max_close .max span{
-    border: 1px solid white;
+    border: 1px solid var(--theme_yellow);
     padding: 0.3em 0.3em;
 }
 .min_max_close div:hover{
