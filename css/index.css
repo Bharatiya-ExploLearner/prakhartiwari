@@ -10,7 +10,6 @@ body{
 
 /* ------------------------------ FRONT SECTION ------------------------------ */
 .front-section{
-    min-height: 100vh;
     display: flex;
     align-items: center;
     color: var(--theme_yellow);
@@ -52,7 +51,6 @@ body{
 /* ------------------------------ INFO SECTION ------------------------------ */
 
 .info_section{
-    min-height: 100vh;
     padding: 5em 5em;
     display: flex;
     flex-direction: column;
@@ -138,6 +136,9 @@ font-size: 1.5em;
 }
 
 .social_div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 1em 1em;
     padding: 0.5em 0.5em;
     border: 2px solid var(--theme_yellow);
@@ -160,3 +161,24 @@ font-size: 1.5em;
 
 }
 
+
+
+/* RESPONSIVENESS */
+
+
+@media (max-width: 1000px) {
+    .info_section{
+        padding: 0em 0em;
+}
+
+    .info_section .info_card{
+        width: 100%;
+
+}
+
+.social_div a{
+    margin: 1em 1em;
+    padding: 0.3em 0.3em;
+}
+
+}

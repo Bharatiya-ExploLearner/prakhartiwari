@@ -1,26 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-:root{
-    --theme_brown: #202020;
-    --theme_yellow: #FFCE76;
-    --theme_blue: #19B9E4;
-    --theme_green: #39ff14;
-
+:root {
+  --theme_brown: #202020;
+  --theme_yellow: #ffce76;
+  --theme_blue: #19b9e4;
+  --theme_green: #39ff14;
 }
 
-::selection{
-    background-color: var(--theme_yellow);
-    color: var(--theme_brown);
+::selection {
+  background-color: var(--theme_yellow);
+  color: var(--theme_brown);
 }
 
-body::before{
+body::before {
   content: "⚙️ Under Construction";
   color: #ffce76;
   background-color: #1d1919;
@@ -35,185 +34,219 @@ body::before{
   z-index: 3;
 }
 
-body{
-    font-family: 'Ubuntu Mono', monospace;
-
+body {
+  font-family: "Ubuntu Mono", monospace;
 }
 
-a{
-    color: var(--theme_yellow);
+a {
+  color: var(--theme_yellow);
 }
-
 
 /* ------------------------------ GOTO TOP BUTTON ------------------------------ */
-.topbutton{
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    display: flex;
+.topbutton {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  z-index: 3;
 }
-.topbutton a{
-    text-decoration: none;
-    color: var(--theme_yellow);
-    padding: 15px 15px;
-    border: var(--theme_yellow) 1px solid;
+.topbutton a {
+  text-decoration: none;
+  color: var(--theme_yellow);
+  padding: 15px 15px;
+  border: var(--theme_yellow) 1px solid;
 }
-.topbutton a:hover{
-    text-decoration: underline;
+.topbutton a:hover {
+  text-decoration: underline;
 }
-
-
-
 
 /* ------------------------------ BASIC NAVBAR ------------------------------ */
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 0.5em;
-    font-family: 'Ubuntu Mono', monospace;
-    margin: 1em;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0.5em;
+  font-family: "Ubuntu Mono", monospace;
+  margin: 1em;
 }
-nav .logo{
-    flex: 0.5;
-    z-index: -1;
+nav .logo {
+  flex: 0.5;
+  z-index: -1;
 }
-nav .logo img{
-    width: 15em;
+nav .logo img {
+  width: 15em;
 }
-nav .links{
-    flex: 1;
-    /* margin-right: 5em; */
-
+nav .links {
+  flex: 1;
 }
 
 nav .links {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
 }
 
-.menu_link{
-    color: var(--theme_yellow);
-    font-size: 1.5em;
-    text-decoration: none;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    font-family: 'Ubuntu Mono', monospace;
-    margin-right: 1em;
+.menu_link {
+  color: var(--theme_yellow);
+  font-size: 1.5em;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family: "Ubuntu Mono", monospace;
+  margin-right: 1em;
 }
-.menu_link:hover{
-    text-decoration: underline;
-}
-
-
-nav .hover_menu{
-    display: none;
-    position: absolute;
-    cursor: pointer;
-}
-nav .hover_menu a{
-    padding: .5em .5em;
-    display: flex;
-    border: 1px solid var(--theme_yellow);
+.menu_link:hover {
+  text-decoration: underline;
 }
 
-nav .hover_menu  a:hover{
-    color: var(--theme_brown);
-    background-color: var(--theme_yellow);
+nav .hover_menu {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+}
+nav .hover_menu a {
+  padding: 0.5em 0.5em;
+  display: flex;
+  border: 1px solid var(--theme_yellow);
 }
 
+nav .hover_menu a:hover {
+  color: var(--theme_brown);
+  background-color: var(--theme_yellow);
+}
 
-
-nav .hover_button:hover .hover_menu{
+nav .hover_button:hover .hover_menu {
   display: block;
 }
 
-
 /* ------------------------------ COMMON CLASSES ------------------------------ */
-.highlight_text{
-    background-color: var(--theme_yellow);
-    color: var(--theme_brown);
+.highlight_text {
+  background-color: var(--theme_yellow);
+  color: var(--theme_brown);
 }
-
-
 
 /* ------------------------------ FOOTER ------------------------------ */
-footer{
-    background-color: black;
-    width: 100%;
-    padding: 2em 2em;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
+footer {
+  background-color: black;
+  width: 100%;
+  padding: 2em 2em;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-terminal{
-    border: 1px solid white;
+.footer-terminal {
+  border: 1px solid white;
 }
-.footer-terminal .command-area{
-    padding: 1em 1em;
-}
-
-
-footer p{
-    font-family: 'Share Tech Mono', monospace;
-    color: white;
-    font-size: 1em;
-    text-align: left;
-    
-    
-}
-footer p a{
-    color: grey;
-    text-decoration: none;
-}
-footer p a:hover{
-    text-decoration: underline;
+.footer-terminal .command-area {
+  padding: 1em 1em;
 }
 
-
-footer .green{
-    color: var(--theme_green);
-    
+footer p {
+  font-family: "Share Tech Mono", monospace;
+  color: white;
+  font-size: 1em;
+  text-align: left;
 }
-footer .blue{
-    color: var(--theme_blue);
-
+footer p a {
+  color: grey;
+  text-decoration: none;
+}
+footer p a:hover {
+  text-decoration: underline;
 }
 
-
+footer .green {
+  color: var(--theme_green);
+}
+footer .blue {
+  color: var(--theme_blue);
+}
 
 /* ------------------------------ MIN MAX CLOSE BUTTONS ------------------------------ */
 
-.min_max_close{
-    display: flex;
-    color: var(--theme_yellow);
+.min_max_close {
+  display: flex;
+  color: var(--theme_yellow);
 }
-.min_max_close div{
+.min_max_close div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em;
+  width: 1.5em;
+  height: 1.5em;
+  border: 1px solid var(--theme_yellow);
+}
+.min_max_close div:hover {
+  border: 1px solid var(--theme_yellow);
+}
+.min_max_close .max span {
+  border: 1px solid var(--theme_yellow);
+  padding: 0.3em 0.3em;
+}
+.min_max_close div:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.min_max_close .close:hover {
+  background-color: red;
+}
+
+.menu-button {
+  color: var(--theme_yellow);
+  position: fixed;
+  cursor: pointer;
+  display: none;
+  
+}
+.menu-button span {
+    z-index: 5;
+  font-size: 3em;
+}
+
+.open .mobile-menu {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 0.8em;
-    width: 1.5em;
-    height: 1.5em;
-    border: 1px solid var(--theme_yellow);
-}
-.min_max_close div:hover{
-    border: 1px solid var(--theme_yellow);
-}
-.min_max_close .max span{
-    border: 1px solid var(--theme_yellow);
-    padding: 0.3em 0.3em;
-}
-.min_max_close div:hover{
-    cursor: pointer;
-    background-color: grey;
-
+    justify-content: center;
+    position: fixed;
+    
 }
 
-.min_max_close .close:hover{
-    background-color: red;
+.mobile-menu {
+  z-index: 4;
+  background-color: var(--theme_brown);
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
+
+.mobile-menu .mobile_menu_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  padding: 1em 1em;
+  border-top: 1px solid var(--theme_yellow);
+  border-bottom: 1px solid var(--theme_yellow);
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1140px) {
+  nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}
+
