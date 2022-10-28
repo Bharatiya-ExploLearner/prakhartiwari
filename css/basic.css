@@ -125,6 +125,7 @@ nav .hover_button:hover .hover_menu {
 .menu-button span {
     z-index: 5;
   font-size: 3em;
+  background-color: var(--theme_brown);
 }
 
 .open .mobile-menu {
@@ -155,6 +156,9 @@ nav .hover_button:hover .hover_menu {
   padding: 1em 1em;
   border-top: 1px solid var(--theme_yellow);
   border-bottom: 1px solid var(--theme_yellow);
+  background-color: var(--theme_brown);
+  text-decoration: none;
+
 }
 
 
