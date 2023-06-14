@@ -1,6 +1,6 @@
 ## TODO
 
-- [ ] Transition to VueJS (Optional)
+- [ ] Transition to VueJS or Maybe Svelte? (Optional)
 
 - [ ] Add two different layouts: One for Employer, One for Regular person
 
